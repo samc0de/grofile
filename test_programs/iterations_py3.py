@@ -12,13 +12,13 @@ import argparse
 
 def log_list_of_nums(num):
   squares_list = []
-  for n in range(num):
+  for n in list(range(num)):
     logging.debug(n)
     squares_list.append(n * n)
 
 
 def log_inside_iterator(num):
-  for n in xrange(num):
+  for n in range(num):
     logging.debug(n)
     yield n * n
 
